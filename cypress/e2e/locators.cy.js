@@ -15,7 +15,7 @@ describe('Find or get elements by using different locators', () => {
         expect(item).to.have.attr("type");
 
         })
-    
+        
         cy.get("input[name='username']").type('tomsmith');
 
         cy.wait(3000);
