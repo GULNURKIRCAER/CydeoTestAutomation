@@ -23,11 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-// eslint-disable-next-line prettier/prettier
+// eslint-disable-next-line prettier/prettier, import/no-extraneous-dependencies
 import 'cypress-file-upload';
 
-Cypress.Commands.add("textExists", (text) => {
-  cy.contains(text).should("exist");
-});
 // textExists is the command name, when we are calling this function from another test class:
 // cy.textExists('parameter'), kind of like utility methods we used before, plus it overrides existing command
+Cypress.Commands.add('textExists', (text) => {
+  cy.contains(text).should('exist');
+});

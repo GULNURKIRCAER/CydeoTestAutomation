@@ -33,7 +33,7 @@ describe('Find or get elements by using different locators', () => {
     // //assertion
     // cy.get('#flash').should('include.text','You logged into a secure area!');
   });
-  
+
   it('Check different locators strategies', () => {
     // by css locator
     cy.get("input[name='username']").type('CydeoStudent');

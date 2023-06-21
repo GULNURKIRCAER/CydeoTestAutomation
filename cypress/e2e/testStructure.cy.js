@@ -35,7 +35,7 @@ describe('Context: My First Tests', () => {
   it('Test 4', () => {
     expect(5).to.equal(5);
   });
-  
+
   it.skip('Test 5', () => {
     expect(true).to.equal('5' === 5);
   });
